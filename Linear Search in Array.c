@@ -53,7 +53,7 @@ int linearSearch(struct Array Arr)
 		if(element == Arr.A[i])
 		 return i;
 	}
-	return 0;
+	return -1;
 	
 }
 
@@ -64,7 +64,7 @@ int main()
 	createArray(&Arr);
 	insertElements(&Arr);
 	x = linearSearch(Arr);
-	if(x == 0)
+	if(x == -1)
 	printf("Element Not Present ");
 	else
 	printf("Element is present at index %d",x);
