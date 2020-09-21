@@ -57,13 +57,13 @@ void leftRotate(struct Array *Arr)
 
 int main()
 {
-	int shift,i;
+	int rotate,i;
 	struct Array Arr;
 	createArray(&Arr);
 	insertElements(&Arr);
 	printf("Enter the number by which you want to Left Rotate the Array : ");
-	scanf("%d",&shift);
-	for(i=0;i<shift;i++)
+	scanf("%d",&rotate);
+	for(i=0;i<rotate;i++)
 	leftRotate(&Arr);
 	displayArray(Arr);
 }
