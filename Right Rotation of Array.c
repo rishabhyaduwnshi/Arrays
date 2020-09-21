@@ -55,13 +55,13 @@ void rightRotate(struct Array *Arr)
 
 int main()
 {
-	int shift,i;
+	int rotate,i;
 	struct Array Arr;
 	createArray(&Arr);
 	insertElements(&Arr);
 	printf("Enter the number by which you want to Right Shift the Array : ");
-	scanf("%d",&shift);
-	for(i=0;i<shift;i++)
+	scanf("%d",&rotate);
+	for(i=0;i<rotate;i++)
 	rightRotate(&Arr);
 	displayArray(Arr);
 }
